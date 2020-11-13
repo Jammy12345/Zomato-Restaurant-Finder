@@ -1,31 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zomato Api</title>
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div class="cont">
-        <!-- <h1>Zomato</h1>
-        <h2>Discover the best food & drinks in Delhi NCR</h2> -->
-        <form id="form" class="form-input">
-            <input type="text" name="q" placeholder="search" class="search">
-            <input type="text" name="lat" placeholder="latitude" class="search">
-            <input type="text" name="lon" placeholder="longitude" class="search">
-            <input type="text" name="start" placeholder="start" class="search">
-            <input type="text" name="count" placeholder="count" class="search">
-            <input type="submit" name="Submit" id="submitbtn" class="btn">
-        </form>
-        <div id="res">
+    <h1>Zomato Restaurants Details</h1>
+    <form  id="form">
+        <input type="text" name="q" placeholder="Restaurants/Food">
+        
+        <input type="number" name="start" placeholder="Filter">
+        <input type="number" name="count" placeholder="Detail per Page">
 
-        </div>
+        <select name="categories">
+            <option value="">-Categories-</option>
+            <option value="Delivery">Delivery</option>
+            <option value="Dine-out">Dine-out</option>
+            <option value="catching-up">Catching-up</option>
+            <option value="Takeway">Takeway</option>
+            <option value="Nightlife">Nightlife</option>
+            <option value="Cafes">Cafes</option>
+            <option value="Daily Menus">Daily Menus</option>
+            <option value="Breakfast">Breakfast</option>
+            <option value="Lunch">Lunch</option>
+            <option value="Dinner">Dinner</option>
+            <option value="Pubs & Bars">Pubs & Bars</option>
+            <option value="Pocket Friendly Delivery">Pocket Friendly </option>
+            <option value="Pubs & Lounges">Pubs & Lounges</option>
+        </select>
+
+        <select name="sort">
+            <option value="">-Sort-</option>
+            <option value="cost">Cost</option>
+            <option value="rating">Rating</option>
+            <option value="real_distance">Real Distance</option>
+        </select>
+
+        <select name="order">
+            <option value="">-Order-</option>
+            <option value="asc">Ascending</option>
+            <option value="desc">Descending</option>
+        </select>
+        <!-- <input type="number" name="start" placeholder="start">
+        <input type="number" name="count" placeholder="Detail per Page"> -->
+        <input type="submit" value="Search" name="search" id="srcbtn">
+    </form>
+    <div id="show">
+
     </div>
 
     <script src="script.js"></script>
 </body>
-
 </html>
